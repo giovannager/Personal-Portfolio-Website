@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    /*background: #131413;*/
+    background: #313c46;
+    color: white;
+}
+
+/*Everything pertaining to the HEADER and top of the website*/
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(sakura.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 20px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 200px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-style: bold;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f5af54;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #f5af54;
+}
+
+.header-text h1 span::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    background: #f5af54;
+    position: absolute;
+    left: 510px;
+    bottom: 310px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.header-text h1 span:hover::after{
+    width: 175px;
+}
+
+
+/*Everything pertaining to the ABOUT section*/
+#about{
+    padding: 80px 0;
+    color: #ebebeb;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.self-img{
+    width: 700px;
+}
+
+.about-col-1{
+    flex-basis: 35%;
+}
+
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2{
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 70px;
+    font-width: 600;
+    color: white;
+}
+
+.paragraph{
+    font-size: 24px;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 40px 0 60px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f5af54;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 100%;
+}
+
+.tab-links:hover::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.tab-contents ul li span{
+    color: #f5af54;
+    font-size: 20px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+/*Everything pertaining to the SERVCIES section*/
