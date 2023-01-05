@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giovanna's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbcd514b1e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-----------------header------------------>
@@ -16,14 +17,13 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Do you think I'm fragile?</p>
-                <h1>안녀하세요.<br>르세라핌의 <span>사쿠라</span>입니다.</h1>
+                <p>Second Year CS Student</p>
+                <h1>Hello.<br>I'm <span>Giovanna Gerada</span>.</h1>
             </div>
         </div>
     </div>
@@ -46,6 +46,7 @@
                         <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('Experience')">Experience</p>
                         <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
                     </div>
                     <div class="tab-contents active-tab" id="Skills">
                         <ul>
@@ -67,19 +68,101 @@
                             <li><span>High School</span><br>TODO</li>
                         </ul>
                     </div>
+                    <div class="tab-contents" id="Hobbies">
+                        <ul>
+                            <li><span>Drawing</span><br>TODO</li>
+                            <li><span>Music</span><br>TODO</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 <!-----------------services------------------>
-<div class="services">
+<div class="projects">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="website">
+                <i class="fa-solid fa-code"></i>
+                <h2>Portfolio Website</h2>
+                <p>My personal portfolio website. The results of this project are what you happen to be reading right now :)</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="remindchuu">
+                <i class="fa-brands fa-discord"></i>
+                <h2>RemindChuu Discord Bot</h2>
+                <p>A discord bot enabling users to set, view, delete, and clear personal or server-wide reminders. 
+                    The bot reminds users by pinging them at any set time with any set reminder. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div class="blanc">
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Blanc Puzzle Video Game</h2>
+                <p>A nonogram puzzle video game</p>
+                <a href="#">Learn more</a>
+                <a href="https://madelahn.itch.io/blanc">Play the game</a>
+            </div>
+            <div class="runnergame">
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Endless Runner Video Game</h2>
+                <p>im fearless huh</p>
+                <a href="#">Learn more</a>
+            </div>
         </div>
+        <a href="https://github.com/giovannager" class="btn"><i class="fa-brands fa-github"></i> GitHub</a>
     </div>
 </div>
+<!-----------------portfolio------------------>
+<!--
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div class="projects">
+                <img src="blanc.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>desc</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="remindchuu2.png">
+                <div class="layer">
+                    <h3>RemindChuu Discord Bot</h3>
+                    <p>desc</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="blanc.png">
+                <div class="layer">
+                    <h3>Blanc Video Game</h3>
+                    <p>desc</p>
+                    <ul>
+                        <li style="display:inline-block;">
+                            <a href="https://github.com/madelahn/blanc" class="side-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </li>
+                        <li style="display:inline-block;">
+                            <a href="https://madelahn.itch.io/blanc" class="side-btn"><i class="fa-solid fa-gamepad"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="runner.png">
+                <div class="layer">
+                    <h3>Endless Runner Game</h3>
+                    <p>desc</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/giovannager" class="btn"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+</div>
+-->
 
 
     <script>
