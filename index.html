@@ -14,12 +14,14 @@
         <div class="container">
             <nav>
                 <img src="logo.svg" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Second Year CS Student</p>
@@ -66,12 +68,14 @@
                         <ul>
                             <li><span>University</span><br>TODO</li>
                             <li><span>High School</span><br>TODO</li>
+                            <li></li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="Hobbies">
                         <ul>
-                            <li><span>Drawing</span><br>TODO</li>
-                            <li><span>Music</span><br>TODO</li>
+                            <li><span>University</span><br>TODO</li>
+                            <li><span>High School</span><br>TODO</li>
+                            <li></li>
                         </ul>
                     </div>
                 </div>
@@ -79,7 +83,7 @@
         </div>
     </div>
 <!-----------------services------------------>
-<div class="projects">
+<div id="projects">
     <div class="container">
         <h1 class="sub-title">My Projects</h1>
         <div class="projects-list">
@@ -99,14 +103,14 @@
             <div class="blanc">
                 <i class="fa-solid fa-gamepad"></i>
                 <h2>Blanc Puzzle Video Game</h2>
-                <p>A nonogram puzzle video game</p>
+                <p>A nonogram puzzle video game which won the first place jury prize for KuriusHacks' 2021 Christmas Edition Game Jam.</p>
                 <a href="#">Learn more</a>
                 <a href="https://madelahn.itch.io/blanc">Play the game</a>
             </div>
             <div class="runnergame">
                 <i class="fa-solid fa-gamepad"></i>
                 <h2>Endless Runner Video Game</h2>
-                <p>im fearless huh</p>
+                <p>An endless runner video game which was created in 2019 as a final project for my grade 11 computer science course.</p>
                 <a href="#">Learn more</a>
             </div>
         </div>
@@ -209,6 +213,20 @@
             }
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabName).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
         }
 
     </script>
