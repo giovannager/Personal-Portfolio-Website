@@ -23,7 +23,7 @@ body{
 
 /*Everything pertaining to the HEADER and top of the website*/
 #header{
-    background-image: url(sakura5.png);
+    background-image: url(bg1.png);
     y-pos: 80px;
     background-size: cover;
     background-attachment: fixed;
@@ -141,6 +141,7 @@ nav ul li a:hover::after{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .self-img{
@@ -441,9 +442,6 @@ nav .fas{
 }
 
 @media only screen and (max-width: 890px){
-    #header{
-        background-image: url("phone-background2.png");
-    }
     .header-text{
         margin-top: 100%;
         font-size: 18px;
