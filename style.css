@@ -223,6 +223,9 @@ nav ul li a:hover::after{
 .tab-contents ul li span{
     color: #f5af54;
     font-size: 20px;
+
+}.tab-contents ul li a{
+    color: white;
 }
 
 .tab-contents{
@@ -282,9 +285,6 @@ nav ul li a:hover::after{
     background-position: right;
 }
 
-.play-game{
-    margin-left: 40px;
-}
 
 .runnergame{
     background-image: linear-gradient(-90deg, rgba(0, 0, 0, .4), rgba(74,96,118,1) 40%),
@@ -442,6 +442,10 @@ nav .fas{
     .tab-contents{
         margin-bottom: -300;
     }
+    .projects-list div p{
+        margin-right: 40%;
+    }
+
 }
 
 @media only screen and (max-width: 890px){
@@ -451,6 +455,9 @@ nav .fas{
     }
     .header-text h1{
         font-size: 29px;
+    }
+    .projects-list div p{
+        margin-right: 10%;
     }
     .logo{
         width: 80px;
@@ -505,6 +512,7 @@ nav .fas{
     }
     .about-col-2 p{
         font-size: 18px;
+        margin-right: 10px;
     }
     .tab-links{
         font-size: 30px;
@@ -535,10 +543,16 @@ nav .fas{
     .projects-list div i{
         font-size: 30px;
     }
+    .play-game{
+        position: relative;
+        display: inline;
+        margin: 0;
+    }
+    .play-game::before{
+        content: "\a";
+        white-space: pre;
+    }
 }
-
-
-
 
 
 
