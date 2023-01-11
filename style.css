@@ -23,7 +23,7 @@ body{
 
 /*Everything pertaining to the HEADER and top of the website*/
 #header{
-    background-image: url(bg1.png);
+    background-image: url(images/bg1.png);
     y-pos: 80px;
     background-size: cover;
     background-attachment: fixed;
@@ -263,7 +263,7 @@ nav ul li a:hover::after{
 
 .website{
     background-image: linear-gradient(-90deg, rgba(0, 0, 0, .4), rgba(74,96,118,1) 40%),
-    url('bg2.png');
+    url('images/bg2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -271,7 +271,7 @@ nav ul li a:hover::after{
 
 .remindchuu{
     background-image: linear-gradient(-90deg, rgba(0, 0, 0, .4), rgba(74,96,118,1) 40%),
-    url('remindchuu3.png');
+    url('images/remindchuu3.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -279,7 +279,7 @@ nav ul li a:hover::after{
 
 .blanc{
     background-image: linear-gradient(-90deg, rgba(0, 0, 0, .4), rgba(74,96,118,1) 40%),
-    url('blanc.png');
+    url('images/blanc.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -288,7 +288,7 @@ nav ul li a:hover::after{
 
 .runnergame{
     background-image: linear-gradient(-90deg, rgba(0, 0, 0, .4), rgba(74,96,118,1) 40%),
-    url('runner.png');
+    url('images/runner.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
